@@ -1,13 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {RealisationPage} from '../realisation/realisation';
+import { RealisationPage } from '../realisation/realisation';
 import { ArticlesProvider } from '../../providers/articles/articles';
-/**
- * Generated class for the ArticlesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
 
 @IonicPage()
 @Component({
@@ -27,11 +21,10 @@ export class ArticlesPage {
   displayArticle()
   {
     this.ArticlesProvider.displayArticle()
-      .then(data=>
-        {
-          this.article = data;
-            console.log(this.article);
-        });
+    .then(data=>
+      {
+        this.article = data;
+        console.log(this.article);
+      })
   }
-
 }

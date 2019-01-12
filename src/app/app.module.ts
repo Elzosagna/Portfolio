@@ -12,6 +12,7 @@ import { ArticlesPage } from '../pages/articles/articles';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { ArticlesProvider } from '../providers/articles/articles';
+import { RealisationsProvider } from '../providers/realisations/realisations';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { ArticlesProvider } from '../providers/articles/articles';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    ArticlesProvider
+    ArticlesProvider,
+    RealisationsProvider
   ]
 })
 export class AppModule {}
