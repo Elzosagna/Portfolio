@@ -7,23 +7,27 @@ page-realisation {
 
   img{
     border-radius:50%;
+    align-items: center !important;
     width:150px;
     height:150px;
   }
-  .image{
+  .image2{
     position: relative;
-    left: -8px;
+    top: 35px;
+    margin: auto;
   }
-  .image1{
+  #card-titre{
     position: relative;
-    right: -8px;
+    bottom: 17px;
+    font-size: 2.0em;
+    font-family: 'Dancing Script', cursive;
+    font-weight: bold !important;
+    color: black;
   }
 
-  .card-title {
+  #card-title {
     position: absolute;
-    top: 17%;
     font-size: 2.0em;
-    width: 100%;
     font-family: 'Dancing Script', cursive;
     font-weight: bold !important;
     color: black;

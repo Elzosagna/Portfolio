@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import {RealisationPage} from '../realisation/realisation';
-
+import { ArticlesProvider } from '../../providers/articles/articles';
 /**
  * Generated class for the ArticlesPage page.
  *
@@ -15,14 +15,23 @@ import {RealisationPage} from '../realisation/realisation';
   templateUrl: 'articles.html',
 })
 export class ArticlesPage {
-
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+    article: any;
+  constructor(public navCtrl: NavController, public navParams: NavParams, public ArticlesProvider: ArticlesProvider) {
+    this.displayArticle();
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ArticlesPage');
   }
-  redirection(){
-    this.navCtrl.push(RealisationPage);
+
+  displayArticle()
+  {
+    this.ArticlesProvider.displayArticle()
+      .then(data=>
+        {
+          this.article = data;
+            console.log(this.article);
+        });
   }
+
 }

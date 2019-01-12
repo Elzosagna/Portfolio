@@ -1,9 +1,3 @@
-<!--
-  Generated template for the RealisationPage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
   <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
   <ion-navbar>
@@ -15,35 +9,40 @@
 </ion-header>
 
 <ion-content padding>
+<ion-grid>
+    <ion-row>
+      <ion-col class="image">
+        <img src="../../assets/imgs/ki_suis_je.jpg"/>
+        <button ion-button [clear] = "true" id="card-titre" [navPush]="nextPage" >titre</button>
+      </ion-col>
+      <ion-col class="image">
+        <img src="../../assets/imgs/bb.jpg"/>
+        <button ion-button [clear] = "true" id="card-titre" [navPush]="nextPage">titre</button>
+      </ion-col>
+    </ion-row>
 
-  <ion-grid>
-  <ion-row>
-    <ion-col col-6 class="image">
-      <img src="../../assets/imgs/ki_suis_je.jpg"/>
-      <div class="card-title">text</div>
-    </ion-col>
-    <ion-col col-6 class="image1">
-      <img src="../../assets/imgs/bb.jpg"/>
-      <div class="card-title">text</div>
-    </ion-col>
-  </ion-row>
+    <ion-row>
+      <ion-col>
+        <div></div>
+      </ion-col>
+        <ion-col col-6 class="image">
+          <img src="../../assets/imgs/angular.jpg"/>
+          <button ion-button [clear] = "true" id="card-titre" [navPush]="nextPage">titre</button>
+      </ion-col>
+      <ion-col>
+        <div></div>
+      </ion-col>
+    </ion-row>
 
-  <ion-row>
-    <ion-col col-12 class="image2">
-      <img src="../../assets/imgs/angular.jpg"/>
-      <div class="card-title">text</div>
-    </ion-col>
-  </ion-row>
-
-  <ion-row>
-    <ion-col col-6 class="image">
-      <img src="../../assets/imgs/bb2.jpg"/>
-      <div class="card-title">text</div>
-    </ion-col>
-    <ion-col col-6 class="image1">
-      <img src="../../assets/imgs/jquery.jpg"/>
-      <div class="card-title">text</div>
-    </ion-col>
-  </ion-row>
-</ion-grid>
+    <ion-row>
+      <ion-col class="image">
+        <img src="../../assets/imgs/bb2.jpg"/>
+        <button ion-button [clear] = "true" id="card-titre" [navPush]="nextPage">titre</button>
+      </ion-col>
+      <ion-col class="image">
+        <img src="../../assets/imgs/jquery.jpg"/>
+        <button ion-button [clear] = "true" id="card-titre" [navPush]="nextPage">titre</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
