@@ -1,12 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ProjetPage } from '../projet/projet';
 
-/**
- * Generated class for the RealisationPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+
 
 @IonicPage()
 @Component({
@@ -16,6 +12,11 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class RealisationPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  }
+
+  //fonction pour la redirection des projets vers leurs descriptions.
+  nextPage(){
+    this.navCtrl.push(ProjetPage);
   }
 
   ionViewDidLoad() {
